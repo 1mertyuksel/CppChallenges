@@ -1,53 +1,47 @@
-# Pideci Uygulaması
+// Pide Vendor Application
+// This C++ program simulates a simple scenario where a pide vendor manages the sale of pide and customers queuing up to buy pide.
 
-Bu C++ programı, bir pideci ve müşterilerin pide almak istediği durumu simüle eden basit bir örnektir.
+// Used Classes
+// Vendor: Manages pide sales and customer queue operations.
 
-## Kullanılan Sınıflar
+// Customer: Contains information about customers who want to buy pide.
 
-- **Pideci**: Pide satışı ve müşterilerin kuyruğa girişi işlemlerini yönetir.
-  
-- **Musteri**: Pide almak isteyen müşteri bilgilerini içerir.
+// Usage
+// The program is executed by creating instances of a vendor and customers within the main function. The simulation includes customers entering the queue to buy pide and the sale of pide.
 
-## Kullanım
+// ... (Other code within the main function)
 
-Program, `main` fonksiyonu içinde bir pideci ve müşteri örnekleri oluşturularak çalıştırılmaktadır. Müşterilerin pide almak için kuyruğa girişi ve pide satışı simüle edilmiştir.
+vendor.sellPide();
+vendor.sellPide();
+vendor.sellPide();
+cout << vendor;
 
-```cpp
-// ... (main fonksiyonu içinde diğer kodlar)
+// ... (Other code)
 
-pideci.pideSat();
-pideci.pideSat();
-pideci.pideSat();
-cout << pideci;
+## Execution
+To compile and run the program, follow these steps:
 
-// ... (diğer kodlar)
+Compile:
+```bash
+g++ QueueExample.cpp -o QueueExample
 
+Run:
+./QueueExample
 
-## Çalıştırma
-Programı derlemek ve çalıştırmak için aşağıdaki adımları izleyebilirsiniz:
+Example Output
 
-Derleme:
-g++ QueueOrnek.cpp  -o QueueOrnek
-
-
-Çalıştırma:
-./QueueOrnek
-
-
-## Örnek Çıktı
-Programın örnek bir çıktısı şu şekildedir:
-Kuyrukta bekleyen musteriler:
-1 -> Mert 2 adet pide almak istiyor.
-2 -> İlayda 3 adet pide almak istiyor.
-3 -> Hasan 3 adet pide almak istiyor.
-4 -> Hüseyin 2 adet pide almak istiyor.
-5 -> Tuana 1 adet pide almak istiyor.
-6 -> Emir 4 adet pide almak istiyor.
-Mert 2 adet pidesi verildi.
-İlayda 3 adet pidesi verildi.
-Hasan 3 adet pidesi verildi.
-Kuyrukta bekleyen musteriler:
-1 -> Hüseyin 2 adet pide almak istiyor.
-2 -> Tuana 1 adet pide almak istiyor.
-3 -> Emir 4 adet pide almak istiyor.
-
+An example output of the program is as follows:
+Customers waiting in the queue:
+1 -> Mert wants to buy 2 pieces of pide.
+2 -> İlayda wants to buy 3 pieces of pide.
+3 -> Hasan wants to buy 3 pieces of pide.
+4 -> Hüseyin wants to buy 2 pieces of pide.
+5 -> Tuana wants to buy 1 piece of pide.
+6 -> Emir wants to buy 4 pieces of pide.
+Mert's order of 2 pides is served.
+İlayda's order of 3 pides is served.
+Hasan's order of 3 pides is served.
+Customers waiting in the queue:
+1 -> Hüseyin wants to buy 2 pieces of pide.
+2 -> Tuana wants to buy 1 piece of pide.
+3 -> Emir wants to buy 4 pieces of pide.
